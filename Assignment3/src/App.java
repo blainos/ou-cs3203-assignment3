@@ -23,6 +23,7 @@ public class App {
         int productOfIntegers = product(listOfIntegers);
         System.out.println("Product: " + productOfIntegers);
 
+        //This was supposed to be added in a separate commit than the last one, I got ahead of myself. Adding this comment instead.
         ArrayList<Integer> listOfReversedIntegers = reverse(listOfIntegers);
         System.out.print("Reversed: ");
         for (int i = 0; i < listOfReversedIntegers.size(); i++) {
