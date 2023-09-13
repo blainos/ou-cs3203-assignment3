@@ -9,17 +9,21 @@ public class App {
         System.out.println("Enter a list of numbers separated by spaces, press enter when list is complete.");
 
         
-        
+        //get raw input
         String[] input = in.nextLine().split(" ");
-    
+        
+        //turn input string into array of integers
         ArrayList<Integer> listOfIntegers = new ArrayList<Integer>();
         for (int i = 0; i < input.length; i++) {
             int inputInt = Integer.parseInt(input[i]);
             listOfIntegers.add(i, inputInt);
         }
+
+        //calculate sum
         int sumOfIntegers = sum(listOfIntegers);
         System.out.println("Sum: " + sumOfIntegers);
 
+        //calculate product
         int productOfIntegers = product(listOfIntegers);
         System.out.println("Product: " + productOfIntegers);
 
