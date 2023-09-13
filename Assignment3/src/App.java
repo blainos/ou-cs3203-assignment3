@@ -23,6 +23,13 @@ public class App {
         int productOfIntegers = product(listOfIntegers);
         System.out.println("Product: " + productOfIntegers);
 
+        ArrayList<Integer> listOfReversedIntegers = reverse(listOfIntegers);
+        System.out.print("Reversed: ");
+        for (int i = 0; i < listOfReversedIntegers.size(); i++) {
+            System.out.print(listOfReversedIntegers.get(i) + " ");
+        }
+        System.out.println("");
+
         in.close();
 
     }
@@ -41,5 +48,13 @@ public class App {
             result *= factors.get(i);
         }
         return result;
+    }
+
+    public static ArrayList<Integer> reverse(ArrayList<Integer> original) {
+        ArrayList<Integer> reversed = new ArrayList<Integer>();
+        for (int i = original.size()-1; i >= 0; i--) {
+            reversed.add(original.get(i));
+        }
+        return reversed;
     }
 }
